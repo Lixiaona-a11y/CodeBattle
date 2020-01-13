@@ -1,0 +1,49 @@
+<extend name="Base/common"/>
+
+<block name="header">
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>玩家列表</h2>
+            <p class="lead"></p>
+        </div>
+    </header>
+</block>
+
+<block name="body">
+    <div class="span9">
+        <!-- Contents
+        ================================================== -->
+        <section id="contents">
+
+            <h2>你选择的游戏是：{$game_id}</h2><br/>
+            <h3>请选择你的对手</h3>
+
+            <volist name="list" id="data">
+                <div class="">
+                    <h3 class="ellipsis"><a href="{:U('Player/details?id='.$data['uid'])}">{$data.nickname}</a></h3>
+
+                </div>
+                <div>
+                    <p class="lead">{$data.id}</p>
+                </div>
+                ID：{$data.uid}<br/>
+                简介：{$data.introduction}<br/>
+                技能：{$data.skills}<br/>
+                等级：{$data.level}<br/>
+
+                <div>
+                    <span><a href="{:U('Battle/index',array('player1_id'=>$data['uid'],'game_id'=>$game_id))}">挑战他！</a></span>
+                    <span><a href="{:U('Player/details?id='.$data['uid'])}">玩家详情</a> </span>
+					<span class="pull-right">
+                </div>
+                <hr/>
+            </volist>
+
+        </section>
+    </div>
+
+</block>
+
+
+
+

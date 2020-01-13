@@ -1,0 +1,40 @@
+<extend name="Base/common"/>
+
+<block name="header">
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>游戏列表</h2>
+            <p class="lead"></p>
+        </div>
+    </header>
+</block>
+
+<block name="body">
+    <div class="span9">
+        <!-- Contents
+        ================================================== -->
+        <section id="contents">
+            <volist name="list" id="data">
+                <div class="">
+                    <h3 class="ellipsis"><a href="{:U('Player/index?game_id='.$data['game_id'])}">{$data.game_name}</a></h3>
+
+                </div>
+
+                <div>
+                    <span>ID：{$data.game_id}</span><br/>
+                    <span>支持语言：{$data.game_language}</span><br/>
+                    <span>被玩次数：{$data.game_playtimes}</span><br/>
+                    <span>发布时间：{$data.game_ctime}</span><br/>
+                    <span>游戏介绍：{$data.game_introduction}</span><br/>
+                </div>
+                <hr/>
+            </volist>
+
+        </section>
+    </div>
+
+</block>
+
+
+
+

@@ -1,0 +1,23 @@
+<extend name="Base/common"/>
+
+<block name="header"><link rel="stylesheet" href="__PUBLIC__/Home/css/ThinkBox.css"/>
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>输入代码页面</h2>
+            <p class="lead"></p>
+        </div>
+    </header>
+</block>
+
+<block name="body">
+<div id='left'>
+    </br></br></br>
+    <h1>{$list[0].game_id}:{$list[0].game_name} </h1></br></br></br>
+    <p>{$list[0].game_introduction}</p>
+</div>
+    <form action="{:U('play',array('player1_id'=>$player1_id,'game_id'=>$game_id))}" method="post">
+        <div id='right'><textarea id="code" name="code" cols='40' rows='10' style='resize:none' placeholder="请输入你的代码"></textarea>
+            <p><input  class="btn btn-primary" type='submit' value='提交'></p></input></div>
+    </form>
+
+</block>

@@ -1,0 +1,42 @@
+<extend name="Base/common"/>
+
+<block name="header">
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>游戏记录</h2>
+            <p class="lead"></p>
+        </div>
+    </header>
+</block>
+
+<block name="body">
+    <div class="span9">
+        <!-- Contents
+        ================================================== -->
+        <section id="contents">
+
+
+            <volist name="list" id="data">
+                <div class="">
+                    <h3 class="ellipsis"><a href="">{$data.record_id}</a></h3>
+                </div>
+                游戏ID：{$data.game_id}<br/>
+                玩家1ID：{$data.player1_id}<br/>
+                玩家2ID：{$data.player2_id}<br/>
+                分数：{$data.score}<br/>
+                结果路径：{$data.result_path}<br/>
+                游戏时间：{$data.time}<br/>
+
+            </volist>
+
+        </section>
+        <br/>
+        {$_page}
+    </div>
+
+
+</block>
+
+
+
+

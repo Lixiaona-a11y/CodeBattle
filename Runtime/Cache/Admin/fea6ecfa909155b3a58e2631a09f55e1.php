@@ -1,0 +1,32 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="span<?php echo ($addons_config["width"]); ?>">
+	<div class="columns-mod">
+		<div class="hd cf">
+			<h5>开发团队</h5>
+			<div class="title-opt">
+			</div>
+		</div>
+		<div class="bd">
+			<div class="sys-info">
+				<table>
+					<tr>
+						<th>总策划</th>
+						<td>梁泽逍</td>
+					</tr>
+					<tr>
+						<th>界面设计</th>
+						<td>小瑶友情帮助</td>
+					</tr>
+					<tr>
+						<th>后台</th>
+						<td>梁泽逍</td>
+					</tr>
+					<tr>
+						<th>前端</th>
+						<td>晓芳 邱聪友情帮助</td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

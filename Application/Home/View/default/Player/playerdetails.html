@@ -1,0 +1,31 @@
+<extend name="Base/common"/>
+
+<block name="header">
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>玩家详情</h2>
+            <p class="lead"></p>
+        </div>
+    </header>
+</block>
+
+<block name="body">
+    <div class="span9">
+        <!-- Contents
+        ================================================== -->
+        <section id="contents">
+            <h3 class="ellipsis">{$list[0].nickname}<h3/>
+            ID：{$list[0].uid}<br/>
+            昵称：{$list[0].nickname}<br/>
+            性别：{$list[0].sex}<br/>
+            分数：{$list[0].score}<br/>
+            状态：{$list[0].status}<br/>
+            <a href="{:U('Battle/index?id='.$list[0]['uid'])}">挑战他！<a/>
+        </section>
+    </div>
+
+</block>
+
+
+
+

@@ -1,0 +1,74 @@
+.top_nav{ 
+height:40px;
+width:1090px;
+background:black;
+}
+.mian_content_two{
+height:500px;
+width:650px;
+background:gray;
+color:white;
+position:relative;
+}
+
+textarea{
+resize:none;
+position: relative;
+left: 9px;
+top: 9px;
+width: 624px;
+}
+.bottom_footer{
+color:red;
+height:50px;
+width:650px;
+width:650px;
+background:gray;
+position:relative;
+top:10px;
+}
+.submit{
+position:relative;
+left:590px;
+top:10px;
+}
+.side_code_area{
+background-color: gray;
+color: white;
+height: 280px;
+width: 388px;
+position: relative;
+left: 680px;
+bottom: 550px;
+}
+.onter{
+	background-color: white;
+	width: 367px;
+	height: 250px;
+	position: relative;
+	top: 13px;
+	left: 10px;
+	color:black;
+}
+.result_output{
+	width: 350px;
+	height: 215px;
+	border-style:none;
+}
+.side_animate_area{
+background-color: gray;
+position: relative;
+bottom: 520px;
+left: 680px;
+height: 250px;
+width: 390px;
+}
+.inter{
+background-color: white;
+height: 223px;
+width: 370px;
+position: relative;
+top: 10px;
+left: 10px;
+color:black;
+}

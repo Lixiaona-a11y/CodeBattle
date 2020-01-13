@@ -1,0 +1,19 @@
+<extend name="Base/common"/>
+
+<block name="header"><link rel="stylesheet" href="__PUBLIC__/Home/css/ThinkBox.css"/>
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>结果展示页</h2>
+            <p class="lead"></p>
+        </div>
+    </header>
+</block>
+
+<block name="body">
+    <volist name="result" id="data">
+        <section id="contents">
+        {$data}<br/>
+            </section>
+    </volist>
+    <a href="{:U('Game/index')}">返回游戏列表</a>
+</block>

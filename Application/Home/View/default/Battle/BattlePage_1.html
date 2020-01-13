@@ -1,0 +1,24 @@
+﻿<extend name="Base/common"/>
+
+<block name="header">
+
+    <header class="jumbotron subhead" id="overview" >
+        <div class="container">
+            <h2>对战页面</h2>
+            <p class="lead"></p>
+        </div>
+    </header>
+</block>
+
+
+<block name="body">
+    <section id="contents">
+    <h3>游戏：{$game_id}</h3><br/>
+    <h3>你的对手是：{$player1_id}</h3><br/>
+    <form action="{:U('play',array('player1_id'=>$player1_id,'game_id'=>$game_id))}" method="post">
+        <textarea id="code" name="code" placeholder="请在此输入代码..." >
+        </textarea>
+        <input type="submit" value="提交">
+    </form>
+    </section>
+</block>
